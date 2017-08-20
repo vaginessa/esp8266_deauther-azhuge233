@@ -39,11 +39,13 @@ With this software flashed onto it, you can select a target network and start di
 
 The deauth attack will, if the connection is vulnerable, disconnect the devices from the network. Because the attack is running constantly, the devices will be disconnected again and again. Depending on the network, that can either block a connection or slow it down.  
 
+**The difference between deauthing and jamming:** [WiFi Jammers vs Deauthers | What's The Difference?](https://www.youtube.com/watch?v=6m2vY2HXU60)  
+
 Other attacks also have been implemented, such as beacon and probe request flooding.  
 
 The deauth attack works by exploiting an old and known vulnerability in the 802.11 Wi-Fi protocol.  
-Because these [deauthentication frames](https://mrncciew.com/2014/10/11/802-11-mgmt-deauth-disassociation-frames/), usually used to close a Wi-Fi connection safely, are are unencrypted, it's very easy to spoof them. You only need the mac address of the access point, which you can sniff easily.  
-If you don't want to attack all connected devices, you can also scan for connections and attack them specifictly.  
+Because these [deauthentication frames](https://mrncciew.com/2014/10/11/802-11-mgmt-deauth-disassociation-frames/), usually used to close a Wi-Fi connection safely, are unencrypted, it's very easy to spoof them. You only need the mac address of the access point, which you can sniff easily.  
+If you don't want to attack all connected devices, you can also scan for connections and attack them specifically.  
 
 ### How to protect yourself against it
 
@@ -71,18 +73,21 @@ My intention with this project is to draw more attention on this issue.
 This attack shows how vulnerable the 802.11 Wi-Fi standard is and that it has to be fixed.  
 **A solution is already there, why don't we use it?**  
 
-Please don't refer to this project as "jammer", that totaly underminds the real purpose of this project!  
+Please don't refer to this project as "jammer", that totally undermines the real purpose of this project!  
 
 ## Supported Devices
 
 **You can flash this software yourself onto any ESP8266**, but if you would like to support me, you can get one of these cool boards that are made especially for this project and come with everything preinstalled!  
 
-- WiFi Deauther (Pocket WiFi)  
+- WiFi Deauther v1.5
 	- [AliExpress](https://goo.gl/JAXhTg)  
 	- [tindie](https://goo.gl/yMiuGH)  
-- WiFi Deauther OLED (Pocket WiFi)  
+- WiFi Deauther OLED v1.5
 	- [AliExpress](https://goo.gl/P30vNz)  
 	- [tindie](https://goo.gl/GGH7x8)  
+- WiFi Deauther OLED v2
+	- [AliExpress](https://goo.gl/UK87iU)  
+	- [tindie](https://goo.gl/PMDYn4)  
   
 ## Installation
 
@@ -242,6 +247,10 @@ This software is licensed under the MIT License. See the [license file](LICENSE)
 ![Screenshot of 'Modern and Consistent'](https://raw.githubusercontent.com/Wandmalfarbe/esp8266_deauther/master/screenshots/web_screenshot_1.png)
 [Modern and Consistent](https://github.com/Wandmalfarbe/esp8266_deauther) - By [@Wandmalfarbe](https://github.com/Wandmalfarbe)  
 
+<img height="400" alt="Screenshot of DeAutherDroid App" src="https://raw.githubusercontent.com/ExploiTR/DeAutherDroid/master/screenshots/device-2017-08-13-143401.png">  
+
+[DeAutherDroid Android APP](https://github.com/ExploiTR/DeAutherDroid) - By [@ExploiTR](https://github.com/ExploiTR)  
+
 ### Videos
 
 [![Cheap Wi-Fi 'Jammer' Device | NodeMCU](https://img.youtube.com/vi/oQQhBdCQOTM/0.jpg)](https://www.youtube.com/watch?v=oQQhBdCQOTM)
@@ -264,7 +273,7 @@ ESP8266:
 
 packet injection with ESP8266: 
 * http://hackaday.com/2016/01/14/inject-packets-with-an-esp8266/
-* http://bbs.espressif.com/viewtopic.php?f=7&t=1357&p=10205&hilit=Wi-Fi_pkt_freedom#p10205
+* http://bbs.espressif.com/viewtopic.php?f=7&t=1357
 * https://github.com/pulkin/esp8266-injection-example
 
 802.11w-2009: https://en.wikipedia.org/wiki/IEEE_802.11w-2009
